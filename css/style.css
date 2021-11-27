@@ -1,0 +1,7 @@
+[class*="container"] {
+    height: 300px;
+    width: 600px;
+    border: 1px solid #333;
+    margin: 20px;
+    display: grid;
+}
