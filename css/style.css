@@ -1,7 +1,302 @@
-[class*="container"] {
-    height: 300px;
-    width: 600px;
-    border: 1px solid #333;
-    margin: 20px;
-    display: grid;
+/* Du har inga klasser som heter .main och .aside. Dessa är taggar och man kommer åt dessa utan punkt, i CSS. 
+Men du verkar ändå ha löst uppgiften utan dessa selektorer. Bättre då att radera CSS kod som inte används Content 1-6 har alla samma kod. 
+Bättre att använda en gemensam selektor för alla content-sektionerna, istället för att repetera koden 6 gånger.
+Samma sak med dina buttons, många har samma kod och därmed bättre att använda en gemensam selektorr för att hålla koden efter DRY-principen (Don't Repeat Yourself) */
+
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 100%;
 }
+
+/*[class*="container"] {
+    
+}*/
+
+/* --------------------------------- Grid Container ---------------------------------------- */
+.container {
+    width: 95%;
+	margin: 20px auto;
+    display: grid;
+	grid-template-columns: repeat(12, 1fr); 
+    /* example repeat(12, fr)*/
+
+	grid-template-rows: auto;
+
+	grid-template-areas: 
+	  "header header header header header header header header header header header header"
+      "content content content content content content content content content content content content "
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+
+  
+	gap: 10px; 
+  }
+
+  
+  /* -------------------------------- Grid Cells ------------------------------------------ */
+
+/*
+example-förläsning- 
+min-height parent can grow with contents
+
+header,
+section,
+main,
+aside,
+footer {
+    border: 1px solid #333;
+    min-height: 100px;
+}
+    */
+
+/*
+example-förläsning-
+used grid_column:
+*/
+
+header {
+    border: 1px solid #333;
+    margin: 100px 0px 0px;
+	min-height: 90px;
+    grid-area: header;
+
+}
+
+.content1 {
+    border: 1px solid #333;
+    margin: 10px;
+    height: 85px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.content2 {
+    border: 1px solid #333;
+    margin: 10px;
+    height: 85px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+ 
+
+
+main {
+    border: 1px solid #333;
+	min-height: 500px;
+    grid-area: content; 
+}
+
+/* aside { 
+    border: 1px solid #333;
+	min-height: 200px;
+    grid-area: sidebar;
+}*/
+
+footer {
+    border: 1px solid #333;
+	min-height: 200px;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box4 {
+    margin: 10px;
+    border: 1px solid #333;
+
+}
+
+.box5 {
+    margin: 10px;
+    border: 1px solid #333;
+
+}
+
+.box6 {
+    margin: 10px;
+    border: 1px solid #333;
+
+}
+
+.box7 {
+    margin: 10px;
+    border: 1px solid #333;
+
+}
+
+/* -------------------- Media Quires ------------------------------ */
+
+/* ------------------ Mindre Desktop ----------------------------- */
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+	    "header header header header header header header header header header header header"
+        "content content content content content content content content content content content content"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+   
+}
+
+/* ------------------ Tabletts -----------------------------*/
+
+/* ipad 767px */
+@media screen and (min-width: 767px) and (max-width: 960px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        /* 12 columns */
+	    "header header header header header header header header header header header header"
+        "content content content content content content content content content content content content"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+   
+
+    footer {
+        border: 1px solid #333;
+        height: 400px;
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+    }
+
+}
+
+/* ------------------- Mobile Phones ------------------------- */
+
+@media screen and (max-width: 767px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+	    "header header header header header header header header header header header header"
+        "content content content content content content content content content content content content" 
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    
+    }
+
+    /* main {
+        border: 1px solid #333;
+        min-height: 500px;
+        grid-area: content; 
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows:repeat(4, 1fr);
+    } */
+
+    
+    footer {
+        border: 1px solid #333;
+        height: 800px;
+        grid-area: footer;
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows:repeat(4, 1fr);
+    }
+}
+
+/* ------------------------- FlexBox Main ------------------------------ */
+
+/* {
+    box-sizing: border-box;
+}*/
+
+.main {
+    display: flex;
+    
+}
+
+
+.flex-items {
+    background-color: ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.content3 {
+    border: 1px solid #333;
+    margin: 10px;
+    height: 480px;
+    width: 250px;
+    flex-grow: 1;
+}
+
+.content4 {
+   border: 1px solid #333;
+   margin: 10px;
+   height: 480px;
+   width: 250px;
+   flex-grow: 1;
+}
+
+
+
+
+/* ------------------------- FlexBox Aside ------------------------------ 
+
+.aside {
+    display: flex;
+    
+}
+
+.flex-items-aside {
+    background-color: rgb(247, 236, 216);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button5 {
+    width: 80%;
+    margin: 10px;
+}
+.button6 {
+    width: 80%;
+    margin: 10px;
+}
+.button7 {
+    width: 80%;
+    margin: 10px;
+}
+.button8 {
+    width: 80%;
+    margin: 10px;
+}*/
+
+
+/* ------------------------- FlexBox Header ------------------------------ */
+
+
+.flex-items-header {
+    /* background-color: rgb(247, 236, 216); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* .button1 {
+    margin: 20px;
+}
+.button2 {
+    margin: 20px;
+}
+.button3 {
+    margin: 20px;
+}
+.button4 {
+    margin: 20px;
+    margin-left: auto;
+} */
