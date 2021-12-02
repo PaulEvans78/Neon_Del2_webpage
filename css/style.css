@@ -3,6 +3,13 @@ Men du verkar ändå ha löst uppgiften utan dessa selektorer. Bättre då att r
 Bättre att använda en gemensam selektor för alla content-sektionerna, istället för att repetera koden 6 gånger.
 Samma sak med dina buttons, många har samma kod och därmed bättre att använda en gemensam selektorr för att hålla koden efter DRY-principen (Don't Repeat Yourself) */
 
+/* Change text to Arial from Myriad Pro */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+
 body {
 	background: url(../img/12_col.gif) center top repeat-y;
 	background-size: 100%;
@@ -12,10 +19,142 @@ body {
     
 }*/
 
+/* --------------------------------- STICKY NAVS ---------------------------------------- */
+
+#home-title-content {
+    position: sticky;
+    top: 0px;
+    
+}
+
+/* --------------------------------- MAIN NAVS ---------------------------------------- */
+
+
+#main-nav {
+    background-color:rgba(68, 67, 67, 0.8);
+    border: 1px solid #333;
+    float: left;
+    height: 89px;
+    width: 70%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 30px;
+    font-family: 'Arial','Courier New', Courier, monospace ;
+    font-style: normal;
+    font-size: 12px;  
+    text-align: left; 
+}
+
+
+
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav ul li a {
+    display: block;
+    border: 1px solid black;
+    margin: 20px 8px;
+    padding: 10px 35px 10px 35px;
+    text-decoration: none;  
+}
+
+#main-nav ul li a:hover {
+    background-color:;
+    color: gray;
+}
+
+
+ #main-nav > ul > li {
+     float: right;
+ }
+ 
+ .dropdown {
+     
+ }
+
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color:rgb(255, 255, 255, 0.8);
+     min-width: 160px;
+     border: 1px solid black;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     padding: 12px 16px;
+     z-index: 1;
+ }
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+
+ .active {
+    /* background-color:red; */
+    color: gray;
+ }
+
+ a {
+     color:black;
+     font-weight: normal;
+ }
+
+ /* --------------------------------- QUICK NAV ---------------------------------------- */
+ 
+ #quick-nav {
+    background-color:rgba(68, 67, 67, 0.8);
+    border: 1px solid #333;
+    border-radius: 8%;
+    float: right;
+    height: 140px;
+    width: 15%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 12px;
+    text-align: center;
+ } 
+
+ #quick-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#quick-nav ul li a {
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px 10px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;  
+}
+
+#quick-nav ul li a:hover {
+    background-color:;
+    color: gray;
+}
+
+
+ #quick-nav > ul > li {
+     
+ }
+ 
+ .dropdown {
+     
+ }
+
 /* --------------------------------- Grid Container ---------------------------------------- */
 .container {
-    width: 95%;
-	margin: 20px auto;
+    width: 1200px;
+	margin: 0px auto;
     display: grid;
 	grid-template-columns: repeat(12, 1fr); 
     /* example repeat(12, fr)*/
@@ -55,26 +194,32 @@ used grid_column:
 
 header {
     border: 1px solid #333;
-    margin: 100px 0px 0px;
+    margin: -40px 0px 0px;
 	min-height: 90px;
     grid-area: header;
 
 }
 
 .content1 {
+    background-color: white;
     border: 1px solid #333;
     margin: 10px;
-    height: 85px;
+    height: 150px;
     width: 100%;
     flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
 }
 
 .content2 {
+    background-color: white;
     border: 1px solid #333;
     margin: 10px;
-    height: 85px;
+    height: 100px;
     width: 100%;
     flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
 }
 
  
@@ -82,7 +227,7 @@ header {
 
 main {
     border: 1px solid #333;
-	min-height: 500px;
+	min-height: 600px;
     grid-area: content; 
 }
 
@@ -101,28 +246,44 @@ footer {
 }
 
 .box4 {
+    background-color: white;
     margin: 10px;
+    padding: 10px;
     border: 1px solid #333;
+    text-align: left;
+    font-size: 14px;
 
 }
 
 .box5 {
+    background-color: white;
     margin: 10px;
     border: 1px solid #333;
 
 }
 
 .box6 {
+    background-color: white;
     margin: 10px;
+    padding: 10px;
     border: 1px solid #333;
-
+    text-align: right;
+    font-size: 14px;
 }
 
 .box7 {
+    background-color: white;
     margin: 10px;
+    padding: 10px;
     border: 1px solid #333;
-
+    text-align: right;
+    font-size: 14px;
 }
+
+.custom-social {
+    color: rgb(116, 114, 112);
+    font-weight: bold;
+   }
 
 /* -------------------- Media Quires ------------------------------ */
 
@@ -186,6 +347,7 @@ footer {
         grid-template-columns:repeat(1, 1fr);
         grid-template-rows:repeat(4, 1fr);
     } */
+    
 
     
     footer {
@@ -223,63 +385,42 @@ footer {
 
 
 .content3 {
+    background-color: white;
     border: 1px solid #333;
     margin: 10px;
-    height: 480px;
+    height: 780px;
     width: 250px;
     flex-grow: 1;
+    text-align: center;
+    font-size: 10px;
 }
+
 
 .content4 {
+   background-color: white;
    border: 1px solid #333;
    margin: 10px;
-   height: 480px;
+   height: 780px;
    width: 250px;
    flex-grow: 1;
+   text-align: center;
+   font-size: 10px;
 }
 
+.custom {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+   }
 
-
-
-/* ------------------------- FlexBox Aside ------------------------------ 
-
-.aside {
-    display: flex;
-    
-}
-
-.flex-items-aside {
-    background-color: rgb(247, 236, 216);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.button5 {
-    width: 80%;
-    margin: 10px;
-}
-.button6 {
-    width: 80%;
-    margin: 10px;
-}
-.button7 {
-    width: 80%;
-    margin: 10px;
-}
-.button8 {
-    width: 80%;
-    margin: 10px;
-}*/
-
+.customh4 {
+    color: rgb(87, 85, 85);
+    font-weight: bold;
+   }
 
 /* ------------------------- FlexBox Header ------------------------------ */
 
 
 .flex-items-header {
-    /* background-color: rgb(247, 236, 216); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -287,16 +428,3 @@ footer {
     align-items: center;
 }
 
-/* .button1 {
-    margin: 20px;
-}
-.button2 {
-    margin: 20px;
-}
-.button3 {
-    margin: 20px;
-}
-.button4 {
-    margin: 20px;
-    margin-left: auto;
-} */
