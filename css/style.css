@@ -159,12 +159,13 @@ body {
  } */
 
 /* --------------------------------- Grid Container ---------------------------------------- */
-.resturant-container {
-    width: 100%; /* 100% ?*/
+.cinema-container, .Restaurant-container {
+    width: 100%; /* 90% ?*/
     min-width: 276px;
 	margin: 0px auto;
     display: grid;
 	grid-template-columns: repeat(12, 1fr); 
+
 
 	grid-template-rows: auto;
 
@@ -181,39 +182,47 @@ body {
   /* -------------------------------- Grid Cells ------------------------------------------ */
 
 
-#resturant-header {
+#cinema-header, #Restaurant-header {
     border: var(--main-border); 
-    margin: 40px 0px 0px;
-	min-height: 90px;
+    margin: 20px 0px 0px;
+	/* min-height: 90px; */
     grid-area: header;
 
 }
 
-.resturant-content1, .resturant-content2 {
+.cinema-content1, .cinema-content2, .Restaurant-content1, .Restaurant-content2 {
     background-color: white;
     border: var(--main-border);
     margin: 10px;
-    min-height: 150px;
+    min-height: 100px;
     width: 100%;
     flex-grow: 1;
     text-align: center;
     font-size: 14px;
 }
 
-.resturant-content2 {
-    min-height: 100px;
+.cinema-content2, .Restaurant-content2 {
+    min-height: 150px;
 }
 
-#resturant-main {
+#Restaurant-main { 
     border: var(--main-border);
 	min-height: 600px;
     grid-area: content; 
+}
+
+#cinema-main {
+    border: var(--main-border);
+    min-height: 300px;
+    min-width: 276px;
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: white;
     border: var(--main-border);
 	min-height: 200px;
+    min-width: 276px;
     grid-area: footer;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -252,7 +261,7 @@ footer {
 /* ------------------ Mindre Desktop ----------------------------- */
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {
-    .resturant-container {
+   .cinema-container, .Restaurant-container {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
 	    "header header header header header header header header header header header header"
@@ -283,7 +292,7 @@ footer {
 
 /* ipad 767px */
 @media screen and (min-width: 767px) and (max-width: 960px) {
-    .resturant-container {
+    .cinema-container, .Restaurant-container { 
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
         /* 12 columns */
@@ -313,7 +322,7 @@ footer {
 /* ------------------- Mobile Phones ------------------------- */
 
 @media screen and (max-width: 767px) {
-    .resturant-container {
+    .cinema-container, .Restaurant-container { 
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
 	    "header header header header header header header header header header header header"
@@ -365,7 +374,6 @@ main {
 }
 
 .flex-items {
-    background-color: ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -373,12 +381,23 @@ main {
     align-items: center;
 }
 
-.resturant-content3, .resturant-content4 {
+.Restaurant-content3, .Restaurant-content4 {
     background-color: white;
     border: var(--main-border);
     margin: 10px;
     height: 780px;
     width: 250px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 10px;
+}
+
+.cinema-content3 {
+    background-color: rgb(3, 3, 3);
+    border: var(--main-border);
+    margin: 10px;
+    min-height: 400px;
+    width: 100%;
     flex-grow: 1;
     text-align: center;
     font-size: 10px;
@@ -397,7 +416,7 @@ main {
 /* ------------------------- FlexBox Header ------------------------------ */
 
 
-.flex-items-header {
+.flex-items-cinema-header, .flex-items-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
