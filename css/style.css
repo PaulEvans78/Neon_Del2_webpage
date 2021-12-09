@@ -182,7 +182,7 @@ body {
   /* -------------------------------- Grid Cells ------------------------------------------ */
 
 
-#cinema-header, #Restaurant-header {
+header {
     border: var(--main-border); 
     margin: 20px 0px 0px;
 	/* min-height: 90px; */
@@ -190,7 +190,7 @@ body {
 
 }
 
-.cinema-content1, .cinema-content2, .Restaurant-content1, .Restaurant-content2 {
+.content1, .content2 {
     background-color: white;
     border: var(--main-border);
     margin: 10px;
@@ -201,8 +201,12 @@ body {
     font-size: 14px;
 }
 
-.cinema-content2, .Restaurant-content2 {
+.content2 {
     min-height: 150px;
+}
+
+#cinema-times, #bar-times {
+    min-height: 120px;
 }
 
 #Restaurant-main { 
