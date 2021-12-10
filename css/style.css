@@ -38,7 +38,8 @@ body {
     float: left;
     height: 89px;
     width: 70%;
-    padding-right: 30px;
+    /* padding-right: 30px; */
+    /* z-index: 2; */
     font-family: 'Arial','Courier New', Courier, monospace ;
     /* font-style: normal; */
     font-size: 12px;  
@@ -103,6 +104,44 @@ body {
 
  /* --------------------------------- QUICK NAV ---------------------------------------- */
  
+ /* The Modal (background) */
+.modal {
+    display: flex; /* Hidden by default */  
+    position: sticky; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 900px;
+    top: 0px;
+    width: 24%; /* Full width */
+    height: 24%; /* Full height */
+    /*overflow: auto;  Enable scroll if needed */
+    /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    /*margin: 10% auto;  15% from the top and centered */
+    padding: 20px;
+    border: var(--main-border);
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 140px;
+}
+  
+  /* The Close Button */
+  .close {
+    color: rgb(66, 65, 65);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
  /* #quick-nav {
     background-color:rgba(68, 67, 67, 0.8);
     border: 1px solid #333;
@@ -184,7 +223,7 @@ body {
 
 header {
     border: var(--main-border); 
-    margin: 20px 0px 0px;
+    margin: -80px 0px 0px;  /* !!!!!!!*/
 	/* min-height: 90px; */
     grid-area: header;
 
@@ -279,7 +318,7 @@ footer {
 
     #main-nav {
         height: 84px;
-        width: 72%;
+        width: 70%;
         font-size: 12px;  
         text-align: left; 
     }
@@ -288,6 +327,7 @@ footer {
         margin: 20px 8px;
         padding: 8px 20px 8px 20px; 
     }
+    
 }
 
 
@@ -396,7 +436,7 @@ main {
     font-size: 10px;
 }
 
-.cinema-content3 {
+.hire-content3, .cinema-content3 {
     background-color: rgb(3, 3, 3);
     border: var(--main-border);
     margin: 10px;
@@ -405,6 +445,11 @@ main {
     flex-grow: 1;
     text-align: center;
     font-size: 10px;
+}
+
+.hire-content3 {
+    min-height: 600px;
+    width: 100%;
 }
 
 .custom {
