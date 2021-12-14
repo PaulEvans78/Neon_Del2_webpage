@@ -7,8 +7,10 @@
     <title>NEON - CINEMA</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+
 <body>
     
     <div id="home-title-content" class="clearfix">
@@ -19,39 +21,56 @@
      <nav id="main-nav">
 
         <ul>
-            <img class="logo" src="../img/neon_ref.png" alt="neon sign">
+            <img class="logo" src="../img/neon_red.png" alt="neon sign">
         
         <li class="dropdown">
-            <a href="#hire" class="">Private Hire</a>
+            <a href="#hire" class=""><span class="customNavLink">Private Hire</span></a>
 
             <ul class="dropdown-content">
-                <li><a href="#">Booking</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">The Screens</a></li> 
+                <li><a href="#"><span class="customNavLink">Booking</span></a></li>
+                <li><a href="#"><span class="customNavLink">How it works</span></a></li>
+                <li><a href="#"><span class="customNavLink">The Screens</span></a></li></span> 
                 </ul>
         <li class="dropdown">
-            <a href="#bar" class="">Bar</a>
+            <a href="#bar" class=""><span class="customNavLink">Bar</span></a>
 
                 <li class="dropdown">
-                    <a href="#" class="">Resturant</a>
+                    <a href="#" class=""><span class="customNavLink">Resturant</span></a>
         
                     <ul class="dropdown-content">
-                        <li><a href="#">Book a table</a></li>
-                        <li><a href="#">The menu</a></li>
+                        <li><a href="#"><span class="customNavLink">Book a table</span></a></li>
+                        <li><a href="#"><span class="customNavLink">The menu</span></a></li>
                         </ul>
 
                         <li class="dropdown">
-                            <a href="#cinema" class="cinemaActive">Cinema</a>
+                            <a href="#cinema" class="cinemaActive"><span class="customNavLink">Cinema</span></a>
                 
                             <ul class="dropdown-content">
-                                <li><a href="../cinema/index.html">Whats Showing</a></li>
-                                <li><a href="#">Tickets</a></li>
-                                <li><a href="#">The Screens</a></li> 
+                                <li><a href="../cinema/index.html"><span class="customNavLink">Whats Showing</span></a></li>
+                                <li><a href="#"><span class="customNavLink">Tickets</span></a></li>
+                                <li><a href="#"><span class="customNavLink">The Screens</span></a></li> 
                             
                                 </ul>
 </nav> 
 
     </div>
+
+        <div class="topnav">
+            <!-- <img class="logo2" src="../img/neon_ref.png" alt="neon sign2"> -->
+        <!-- <a href="#home" class="active"></a> -->
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news"><span class="customLink">Cinema</span></a>
+          <a href="#contact"><span class="customLink">Restuarant</span></a>
+          <a href="#about"><span class="customLink">Bar</span></a>
+          <a href="#about"><span class="customLink">Private Hire</span></a>
+        </div>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
     <!-- <div id="home-title-content" class="clearfix"> 
 
@@ -59,19 +78,19 @@
 </div> -->
 
 <!-----------------------The Booking Sticky----------------------------------------- -->
-<div id="bookingSticky" class="quickBook">
+<!-- <div id="bookingSticky" class="quickBook"> -->
 
     <!---------------------Quick Booking content------------------------------------ -->
-    <div class="quickBook-content" id="quickBook-nav" >
+    <!-- <div class="quickBook-content" id="quickBook-nav" > -->
       <!-- <span class="close">&times;</span> -->
-      <ul>
+      <!-- <ul>
         <li><a href="#" class="">Book Cinema</a></li>
         <li><a href="#" class="">Book Restaurant</a></li>
         <li><a href="#" class="">Book Private Hire</a></li>
     </ul>
     </div>
 
-    </div>
+    </div> -->
 
     <!-- -------------------CINEMA-------------------------------------------------- -->
 
@@ -102,7 +121,44 @@
         
      <main id="cinema-main"><!--class="flex-items" dir="ltr"> -->
         <section class="cinema-content3">
-        
+            <div class="slideshow-container">
+
+                
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">1 / 3</div> -->
+    <iframe id="movie" src="https://www.youtube.com/embed/BIhNsAtPbPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <img src="../img/noTimeToDie.png" style="width:100%"> -->
+    <!-- <div class="text">Caption Text</div> -->
+  </div>
+
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">2 / 3</div> -->
+    <iframe id="movie" src="https://www.youtube.com/embed/1SQsvi39A_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <img src="../img/houseOfGucci.png" style="width:100%"> -->
+    <!-- <div class="text">Caption Two</div> -->
+  </div>
+
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">3 / 3</div> -->
+    <iframe id="movie" src="https://www.youtube.com/embed/OkTyVNhjuwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <img src="../img/atlantics.png" style="width:100%"> -->
+    <!-- <div class="text">ATANTICS</div> -->
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<!-- <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> -->
+
+            </div>
         </section>
          
        </main>
@@ -123,9 +179,9 @@
 
             <section class="box4">
                 <h4>Social Media</h4>
-                <a href="url"><img class="instagram-icon" src="img/instagram_icon.png" alt="Instagram" height="30px" width=" "></a><br>
-                <a href="url"><img class="facebook-icon" src="img/facebook_icon.png" alt="Facebook" height="30px" width=" "></a><br>
-                <a href="url"><img class="twitter-icon" src="img/twitter_icon.png" alt="Twitter" height="30px" width=" "></a>
+                <a href="url"><img class="instagram-icon" src="../img/instagram_icon.png" alt="Instagram" height="30px" width=" "></a><br>
+                <a href="url"><img class="facebook-icon" src="../img/facebook_icon.png" alt="Facebook" height="30px" width=" "></a><br>
+                <a href="url"><img class="twitter-icon" src="../img/twitter_icon.png" alt="Twitter" height="30px" width=" "></a>
                 <!-- <p><a href="url"><span class="custom-social">Instagram</a></span></p>
                 <p><a href="url"><span class="custom-social">Facebook</a></span></p>
                 <p><a href="url"><span class="custom-social">Twitter</a></span></p> -->
@@ -134,6 +190,6 @@
         
 
     </div> 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
