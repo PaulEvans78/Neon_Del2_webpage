@@ -13,9 +13,13 @@ Samma sak med dina buttons, många har samma kod och därmed bättre att använd
     box-sizing: border-box;
 } */
 
-
-body {
+.background_cinema {
 	background: url(../img/cinema_background.png) center top repeat-y;
+	background-size: 100%;
+}
+
+.background_restaurant {
+	background: url(../img/restaurant_background.jpg) center top repeat-y;
 	background-size: 100%;
 }
 
@@ -240,7 +244,7 @@ header {
 }
 
 .content1, .content2 {
-    background-color: rgb(250, 249, 248, 0.9);
+    background-color: rgb(250, 249, 248, 0.8);
     border: 6px solid black;
     border-style: double;
     margin: 10px;
@@ -664,7 +668,8 @@ main {
 
 .Restaurant-content3, .Restaurant-content4 {
     background-color: white;
-    border: var(--main-border);
+    border: 6px solid black;
+    border-style: double;
     margin: 10px;
     height: 780px;
     width: 250px;
