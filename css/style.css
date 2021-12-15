@@ -23,6 +23,15 @@ Samma sak med dina buttons, många har samma kod och därmed bättre att använd
 	background-size: 100%;
 }
 
+.background_bar {
+	background: url(../img/bar_background.jpg) center top repeat-y;
+	background-size: cover;
+}
+
+body {
+    min-width: 360px;
+}
+
 /* --------------------------------- STICKY NAVS ---------------------------------------- */
 
 #home-title-content {
