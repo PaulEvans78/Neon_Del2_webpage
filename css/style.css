@@ -9,13 +9,13 @@ Samma sak med dina buttons, många har samma kod och därmed bättre att använd
     --main-font-size: 14px;
 }
 
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 .background_cinema {
 	background: url(../img/cinema_background.png) center top repeat-y;
-	background-size: 100%;
+	background-size: cover;
 }
 
 .background_restaurant {
@@ -25,7 +25,7 @@ Samma sak med dina buttons, många har samma kod och därmed bättre att använd
 
 .background_bar {
 	background: url(../img/bar_background.jpg) center top repeat-y;
-	background-size: cover;
+	background-size: 100%;
 }
 
 body {
@@ -133,93 +133,7 @@ body {
     position: relative;
     display: none;
   }
- /* --------------------------------- QUICK NAV ---------------------------------------- */
  
- /* The Modal (background) */
-.quickBook {
-    display: flex; /* Hidden by default */  
-    position: sticky; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 100%;
-    top: 20px;
-    width: 250px; /* Full width */
-    min-width: 274px;
-    height: 150px; /* Full height */
-    /* overflow: auto;  Enable scroll if needed */ 
-    /* background-color: rgba(70, 68, 68, 0.4);  */
-  }
-  
-  /* Modal Content/Box */
-  .quickBook-content {
-    background-color: rgb(3, 3, 3);
-    /*margin: 10% auto;  15% from the top and centered */
-    padding: 0px 20px;
-    margin: auto 5px;
-    border-radius: 8px;
-    border: var(--main-border);
-    /* border-style: double; */
-    width: 100%; /* Could be more or less, depending on screen size */
-    height: 200px;
-    font-family: 'Arial','Courier New', Courier, monospace ;
-    font-size: var(--main-font-size); 
-    text-align: center;
-}
-
-/* #quickBook-nav {
-    background-color:rgba(68, 67, 67, 0.8);
-    border: 1px solid #333;
-    border-radius: 8%;
-    float: right;
-    height: 140px;
-    width: 16%;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    padding: 10px 10px 10px 10px;
-    font-family: 'Courier New', Courier, monospace ;
-    font-size: 12px;
-    text-align: center;
- }  */
-
-    /* .close {
-    color:rgba(247, 246, 248, 0.8);
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    padding: 12px 16px;
-    transform: translate(0%, -20%);
-    } */
-
-  #quickBook-nav ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0;
-} 
-
-#quickBook-nav ul li a {
-    background-color:rgb(201, 116, 36);
-    display: block;
-    width: 155px;
-    height: 20px;
-    border-radius: 8px;
-    margin: 10px auto;
-    padding: 18px 15px 15px 20px;
-}
-
-#quickBook-nav ul li a:hover {
-    background-color:;
-    color: gray;
-}
-
-
- /* #quickBook-nav > ul > li {
-     
- } */
- 
- /*.dropdown {
-     
- }  */
 /* --------------------------------- Grid Container ---------------------------------------- */
 .cinema-container, .Restaurant-container {
     width: 100%; /* 90% ?*/
@@ -280,8 +194,15 @@ header {
 
 #cinema-main {
     border: var(--main-border);
-    min-height: 300px;
+    min-height: 663px;
     min-width: 276px;
+    margin-bottom: 20px;
+}
+
+#bar-main {
+    border: var(--main-border);
+    /* min-height: 663px; */
+    min-width: 100%;
     margin-bottom: 20px;
 }
 
@@ -297,7 +218,7 @@ header {
 }
 
 /* Hide the images by default */
-.mySlides {
+.trailersMySlides {
   display: none;
 }
 
@@ -386,6 +307,109 @@ header {
   to {opacity: 1}
 }
 
+/*---------------------------SlideShow Gallery-----------------------*/
+
+/* .container {
+    position: relative;
+  } */
+  
+  .bar-content3 {
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(3, 3, 3);
+    border: var(--main-border);
+    margin: 10px;
+    padding: 10px;
+    /* min-height: 400px; */
+    width: 100%;
+    /* flex-grow: 1; */
+    text-align: center;
+    /* font-size: 10px; */
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  .barImageStyle {
+      width: 50%;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float:left;
+    width: 16.6%;
+    /* justify-content: center; */
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
 /*---------------------------FOOTER----------------------------------*/
 footer {
     background-color: rgb(248, 247, 246, 0.9);
@@ -445,7 +469,7 @@ footer {
 
     #main-nav {
         height: 84px;
-        width: 70%;
+        width: 72%;
         font-size: 12px;  
         text-align: left; 
     }
@@ -459,6 +483,11 @@ footer {
         
         margin: 40px 0px 0px 0px; 
     }
+
+        .barImageStyle {
+        width: 80%;
+    }
+
 }
 
 
@@ -492,34 +521,13 @@ footer {
         padding: 8px 15px 8px 20px;
     }
 
-    .quickBook {
-        left: 290px;
-        top: 80px;
-        width: 100%; 
-        height: 100px; 
-      }
-
-    .quickBook-content{
-        height: 70px;
-      }
-
-      #quickBook-nav ul li a {
-        float: left;
-        width: 100px;
-        height: 10px;
-        margin: 18px 50px;
-        padding: 10px 15px 15px 20px;
-        font-size: 12px;
-        text-align: center;
-    }
-
     header {
         margin: 40px 0px 0px 0px;
     }  
 
-    /* #cinema-main {
-        height: 423px;
-    } */
+    .barImageStyle {
+        width: 90%;
+    }
 
 }
 
@@ -535,18 +543,6 @@ footer {
     
     }
 
-    /* .logo {
-        display: none;
-    } */
-
-    /*.logo2 {
-        height: 80px;
-        border-radius: 7% / 20%;
-        position:absolute;
-        left: 0;
-    } */
-    
-
     #main-nav {
         width: 71px;
     }
@@ -556,29 +552,13 @@ footer {
        
     }
 
-    .quickBook {
-        left: 290px;
-        top: 100px;
-        width: 50%; 
-        height: 100px; 
-        margin-top: 10px;
-      }
-
-    .quickBook-content{
-        height: 147px;
-      }
-
-    #quickBook-nav ul li a {
-        width: 155px;
-        height: 10px;
-        border-radius: 8px;
-        margin: 10px auto;
-        padding: 10px 15px 15px 20px;
-    }
-
     header {
         margin: 40px 0px 0px 0px;
     } 
+
+    .barImageStyle {
+        width: 100%;
+    }
 
     footer {
         background-color: rgb(248, 247, 246,);
@@ -608,7 +588,7 @@ footer {
         /* border: var(--main-border); */
     }
 
-
+/*----------------------------HAMBURGER MENU--------------------------------*/
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
@@ -680,7 +660,7 @@ main {
     border: 6px solid black;
     border-style: double;
     margin: 10px;
-    height: 780px;
+    height: 800px;
     width: 250px;
     flex-grow: 1;
     text-align: center;
@@ -703,9 +683,11 @@ main {
 }
 
 #movie {
+    /* background-size: contain; */
     width: 100%;
-    min-height: 562px; 
-}
+    height: 663px;
+    /* resize: both; */
+} 
 
 .hire-content3 {
     min-height: 600px;
@@ -750,11 +732,3 @@ main {
     justify-content: flex-start;
     align-items: center;
 }
-
-/* .quickBook-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-} */
