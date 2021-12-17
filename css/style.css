@@ -28,9 +28,15 @@ Samma sak med dina buttons, många har samma kod och därmed bättre att använd
 	background-size: 100%;
 }
 
+.background_hire {
+	background: url(../img/hire_background.jpg) center top repeat-y;
+	background-size: 100%;
+}
+
 body {
     min-width: 360px;
 }
+
 
 /* --------------------------------- STICKY NAVS ---------------------------------------- */
 
@@ -199,7 +205,7 @@ header {
     margin-bottom: 20px;
 }
 
-#bar-main {
+#bar-main, #hire-main {
     border: var(--main-border);
     /* min-height: 663px; */
     min-width: 100%;
@@ -313,7 +319,7 @@ header {
     position: relative;
   } */
   
-  .bar-content3 {
+  .bar-content3, .hire-content3 {
     box-sizing: border-box;
     position: relative;
     background-color: rgb(3, 3, 3);
@@ -667,7 +673,7 @@ main {
     font-size: 10px;
 }
 
-.hire-content3, .cinema-content3 {
+/*.hire-content3,*/ .cinema-content3 {
     background-color: rgb(3, 3, 3);
     border: var(--main-border);
     margin: 10px;
@@ -678,9 +684,9 @@ main {
     font-size: 10px;
 }
 
-.cinema-content3 {
+/* .cinema-content3 {
     min-height: 183px;
-}
+} */
 
 #movie {
     /* background-size: contain; */
