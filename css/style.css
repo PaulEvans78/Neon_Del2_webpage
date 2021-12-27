@@ -212,7 +212,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* --------------------Carousel-----------------------------------*/
+/* --------------------Carousel + Slideshow-----------------------------------*/
 
 /* * {box-sizing:border-box} */
 
@@ -312,7 +312,7 @@ header {
   to {opacity: 1}
 }
 
-/*---------------------------SlideShow Gallery-----------------------*/
+/*---------------------------SlideShow---------------------------------*/
 
 /* .container {
     position: relative;
@@ -333,7 +333,7 @@ header {
   }
 
   .barImageStyle {
-      width: 50%;
+      width: 100%;
   }
 
   /* Add a pointer when hovering over the thumbnail images */
@@ -410,6 +410,136 @@ header {
     opacity: 1;
   }
 
+  /*----------------------------lightbox Gallery-----------------------------*/
+
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .hireColumn {
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30px;
+    border: var(--main-border);
+    border-radius: 20px;
+    left: 15%;
+    top: 12%;
+    width: 70%;
+    height: 80%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #020202;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  /* .mySlides {
+    display: none;
+  } */
+  
+  /* Next & previous buttons */
+  /* .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  } */
+  
+  /* Position the "next button" to the right */
+  /* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /* .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  } */
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* Caption text */
+  /* .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  } */
+  
+  /* img.demo {
+    opacity: 0.6;
+  } */
+  
+  /* .active,
+  .demo:hover {
+    opacity: 1;
+  } */
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 /*---------------------------FOOTER----------------------------------*/
 footer {
     background-color: rgb(248, 247, 246, 0.9);
@@ -529,6 +659,16 @@ footer {
         width: 90%;
     }
 
+    /* .hire-content3 {
+      min-height: 300px;
+  } */
+
+     /* The Modal (background) */
+  .modal {
+    padding-top: 50px;
+    height: 60%;
+  }
+  
 }
 
 /* ------------------- Mobile Phones ------------------------- */
@@ -588,6 +728,15 @@ footer {
         /* border: var(--main-border); */
     }
 
+    /* The Modal (background) */
+  .modal {
+    padding-top: 50px;
+    left: 0%;
+    width: 100%;
+    max-height: 400px;
+  }
+
+}
 /*----------------------------HAMBURGER MENU--------------------------------*/
 /* Style the navigation menu */
 .topnav {
@@ -690,7 +839,7 @@ main {
 } 
 
 .hire-content3 {
-    min-height: 600px;
+    min-height: 100px;
     width: 100%;
 }
 
