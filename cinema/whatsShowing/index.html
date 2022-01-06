@@ -7,7 +7,7 @@
     <title>NEON - CINEMA</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- ? -->
 </head>
 
 
@@ -21,7 +21,7 @@
      <nav id="main-nav">
 
         <ul>
-            <img class="logo" src="../../img/neon_red.png" alt="neon sign">
+            <a href="../../index.html"><img class="logo" src="../../img/neon_red.png" alt="neon sign"></a>
         
         <li class="dropdown">
             <a href="#hire" class=""><span class="customNavLink">Private Hire</span></a>
@@ -55,19 +55,47 @@
 
     </div>
 
-    <!--------------------------Hanburger menu ------------------------------------->
+    <!--------------------------Hamburger menu ------------------------------------->
+    <div class="mobile-container">
+        
         <div class="topnav">
         <div id="myLinks">
-          <a href="#news"><span class="customLink">Cinema</span></a>
-          <a href="#contact"><span class="customLink">Restuarant</span></a>
-          <a href="#about"><span class="customLink">Bar</span></a>
-          <a href="#about"><span class="customLink">Private Hire</span></a>
+            <li class="dropdown">
+                        <a href="#" class=""><span class="customNavLink2">Cinema</span></a>
+    
+                <ul class="dropdown-content2">
+                    <li><a href="../whatsShowing/index.html"><span class="customLink">Whats Showing</span></a></li>
+                    <li><a href="../tickets/index.html"><span class="customLink">Tickets</span></a></li>
+                    <li><a href="../theScreens/index.html"><span class="customLink">The Screens</span></a></li> 
+                    </ul>
+
+            <li class="dropdown">
+                        <a href="#" class=""><span class="customNavLink2">Restaurant</span></a>
+            
+                    <ul class="dropdown-content2">
+                        <li><a href="../../restaurant/bookATable/index.html"><span class="customLink">Book a table</span></a></li>
+                        <li><a href="../../restaurant/aboutMenu/index.html"><span class="customLink">About / Menu</span></a></li>
+                        </ul>
+
+            <li class="dropdown">
+                        <a href="../../bar/index.html" class=""><span class="customNavLink2">Bar</span></a>
+
+            <li class="dropdown">
+                         <a href="#hire" class=""><span class="customNavLink2">Private Hire</span></a>
+                
+                        <ul class="dropdown-content2">
+                                <li><a href="../../hire/booking/index.html"><span class="customLink">Booking</span></a></li>
+                                <li><a href="../../hire/howItWorks/index.html"><span class="customLink">How it works</span></a></li>
+                                <li><a href="../../hire/screens/index.html"><span class="customLink">The Screens</span></a></li></span> 
+                                </ul>
+        
         </div>
 
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
+</div>
 </div>
 
     <!-- <div id="home-title-content" class="clearfix"> -->
