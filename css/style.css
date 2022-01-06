@@ -141,7 +141,7 @@ body {
   }
  
 /* --------------------------------- Grid Container ---------------------------------------- */
-.cinema-container, .Restaurant-container {
+.cinema-container, .Restaurant-container, .home-container {
   width: 100%; /* 90% ?*/
   min-width: 276px;
 	margin: 0px auto;
@@ -158,8 +158,14 @@ body {
 
   
 	gap: 10px; 
+
   }
 
+/* .home-container {
+  border: 10px black solid;
+  top: 0px;
+  z-index: 1;
+  } */
   
   /* -------------------------------- Grid Cells ------------------------------------------ */
 
@@ -196,6 +202,12 @@ header {
     border: var(--main-border);
 	min-height: 600px;
     grid-area: content; 
+}
+
+#home-main { 
+  border: var(--main-border);
+  min-height: 600px;
+  grid-area: content; 
 }
 
 #cinema-main {
@@ -585,7 +597,7 @@ footer {
 /* ------------------ Mindre Desktop ----------------------------- */
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {
-   .cinema-container, .Restaurant-container {
+   .cinema-container, .Restaurant-container, .home-container {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
 	    "header header header header header header header header header header header header"
@@ -625,7 +637,7 @@ footer {
 
 /* ipad 767px */
 @media screen and (min-width: 767px) and (max-width: 960px) {
-    .cinema-container, .Restaurant-container { 
+    .cinema-container, .Restaurant-container, .home-container { 
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
         /* 12 columns */
@@ -673,7 +685,7 @@ footer {
 /* ------------------- Mobile Phones ------------------------- */
 
 @media screen and (max-width: 767px) {
-    .cinema-container, .Restaurant-container { 
+    .cinema-container, .Restaurant-container, .home-container { 
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
 	    "header header header header header header header header header header header header"
@@ -728,12 +740,12 @@ footer {
     }
 
     /* The Modal (background) */
-  .modal {
-    padding-top: 50px;
-    left: 0%;
-    width: 100%;
-    max-height: 400px;
-  }
+    .modal {
+      padding-top: 50px;
+      left: 0%;
+      width: 100%;
+      max-height: 400px;
+    }
 
 /*----------------------------HAMBURGER MENU--------------------------------*/
 
@@ -850,6 +862,24 @@ main {
     flex-grow: 1;
     text-align: center;
     font-size: 10px;
+}
+
+.home-content1, .home-content2, .home-content3 {
+    /* background-color: white; */
+    border: 1px solid black;
+    /* border-style: double; */
+    /* margin: 10px; */
+    height: 800px;
+    width: 250px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 10px;
+} 
+
+.cinema-img, .restuarant-img, .bar-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 /*.hire-content3,*/ .cinema-content3 {
