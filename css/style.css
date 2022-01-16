@@ -14,23 +14,33 @@ Samma sak med dina buttons, många har samma kod och därmed bättre att använd
 }
 
 .background_cinema {
-	background: url(../img/cinema_background.png) center top repeat-y;
-	background-size: cover;
+	/* background: url(../img/cinema_background.png) center top repeat-y;
+	background-size: cover; */
+  /* background-color: orange; */
+  /* background-image: linear-gradient(to bottom, white, gray); */
+  background-image: linear-gradient(white, rgb(105, 91, 83), white);
+  /* min-width: 360px; */
 }
 
 .background_restaurant {
-	background: url(../img/restaurant_background.jpg) center top repeat-y;
-	background-size: 100%;
+	/* background: url(../img/restaurant_background.jpg) center top repeat-y;
+	background-size: 100%; */
+  /* background-color: rgb(255, 165, 0, 0.5); */
+  /* background-image: linear-gradient(to bottom, white, orange); */
+  background-image: linear-gradient(white, rgb(219, 141, 38), white);
+  
 }
 
 .background_bar {
-	background: url(../img/bar_background.jpg) center top repeat-y;
-	background-size: 100%;
+	/* background: url(../img/bar_background.jpg) center top repeat-y;
+	background-size: 100%; */
+  background-image: linear-gradient(white, rgb(218, 72, 36), white);
 }
 
 .background_hire {
-	background: url(../img/hire_background.jpg) center top repeat-y;
-	background-size: 100%;
+	/* background: url(../img/hire_background.jpg) center top repeat-y;
+	background-size: 100%; */
+  background-image: linear-gradient(white, rgba(20, 156, 219, 0.938), white);
 }
 
 body {
@@ -52,13 +62,21 @@ body {
 .logo {
     height: 89px;
     border-radius: 7% / 20%;
+    margin-top: 4px;
 }
+
+.logo:hover {
+  height: 92px;
+  /* color:rgb(87, 85, 85); */
+}
+
 
 
 #main-nav {
     float: left;
-    height: 89px;
-    width: 70%;
+    height: 100px;
+    width: 100%;
+    background-color: white;
     /* padding-right: 30px; */
     font-family: 'Arial','Courier New', Courier, monospace ;
     /* font-style: normal; */
@@ -85,7 +103,8 @@ body {
 }
 
 #main-nav ul li a:hover {
-    background-color:rgb(118, 204, 226);
+    /* background-color:rgb(73, 72, 72); */
+    padding: 11px 36px 11px 36px;
     /* color: gray; */
 }
 
@@ -115,18 +134,22 @@ body {
      display: block;
  }
 
- .active {
+ /* .active {
         background-color: red;
- }
+ } */
 
  a {
      color: rgb(0, 0, 0);
      font-weight: normal;
  }
 
+ /* a :hover {
+   color: gray;
+ } */
+
  #currentLink {
    /* background-color: red; */
-   color: orange;
+   color: rgb(255, 0, 13);
  }
 
  /* li a:hover {
@@ -177,7 +200,7 @@ body {
 
 header {
     border: var(--main-border); 
-    margin: 40px 0px 0px 0px;  /* !!!!!!!*/
+    margin: 30px 0px 0px 0px;  /* !!!!!!!*/
 	/* min-height: 90px; */
     grid-area: header;
 
@@ -215,14 +238,14 @@ header {
   grid-area: content; 
 }
 
-/* #cinema-main {
+#cinema-main {
     border: var(--main-border);
     min-height: 663px;
     min-width: 276px;
     margin-bottom: 20px;
-} */
+} 
 
-#bar-main, #hire-main, #cinema-main {
+#bar-main, #hire-main {
     border: var(--main-border);
     /* min-height: 663px; */
     min-width: 100%;
@@ -261,7 +284,7 @@ header {
 }
 
 .cinema_prev, .cinema_next {
-  top: 100%;
+  top: 42%;
 }
 
 /* Position the "next button" to the right */
@@ -335,6 +358,18 @@ header {
   to {opacity: 1}
 }
 
+#movie {
+  /* background-size: contain; */
+  width: 100%;
+  object-fit: cover;
+  height: 800px;
+  /* width: 95%;
+  height: 700px;
+  margin: 35px; */
+  /* resize: both; */
+} 
+
+
 /*---------------------------SlideShow BAR/HIRE---------------------------------*/
 
 /* .container {
@@ -354,6 +389,10 @@ header {
     text-align: center;
     /* font-size: 10px; */
   }
+
+  /* .cinema-content3 {
+    z-index: -1;
+  } */
 
   .barImageStyle {
       width: 100%;
@@ -434,10 +473,15 @@ header {
   .thumbnails {
     opacity: 0.6;
   }
-  
+
   .active,
   .thumbnails:hover {
     opacity: 1;
+  }
+
+  .cinema-img:hover, .restuarant-img:hover, .bar-img:hover {
+    opacity: 0.8;
+    /* background-color: #020202; */
   }
 
   /*----------------------------lightbox Gallery HIRE-----------------------------*/
@@ -568,17 +612,20 @@ header {
   }
   
   .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.5;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   }
 /*---------------------------FOOTER----------------------------------*/
 footer {
     background-color: rgb(248, 247, 246, 0.9);
     border: 1px solid black;
-	min-height: 200px;
+	  min-height: 200px;
     min-width: 276px;
     grid-area: footer;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    position:relative;
+    z-index: -1;
 }
 
 .box1, .box2, .box3, .box4  {
@@ -596,6 +643,11 @@ footer {
     padding: 0px;
 }
 
+/* .mapouter {
+  position:absolute;
+  z-index: -1;
+} */
+
 .box3 {
     text-align: center;
 }
@@ -603,6 +655,16 @@ footer {
 .box4 {
     text-align: right;
 }
+
+a[href^="mailto"]:hover { color: gray; }
+
+.instagram-icon:hover, .facebook-icon:hover, .twitter-icon:hover {
+  height: 40px;
+}
+
+/* .mailto a:hover {
+  background-color: orange;
+}  */
 
 /* .custom-social {
     color: rgb(224, 50, 19);
@@ -626,26 +688,38 @@ footer {
         height: 84px;
     }
 
-    #main-nav {
-        height: 84px;
-        width: 72%;
+    /* #main-nav {
+        height: 100px;
+        width: 100%;
         font-size: 12px;  
         text-align: left; 
-    }
+    } */
 
     #main-nav ul li a {
         margin: 20px 8px;
         padding: 8px 20px 8px 20px; 
     }
     
-    header {
-        
-        margin: 40px 0px 0px 0px; 
-    }
+    /* header { 
+        margin: 20px 0px 0px 0px; 
+    } */
 
     .barImageStyle {
         width: 80%;
     }
+
+    .modal {
+      padding-top: 40px;
+      height: 70%;
+    }
+
+    
+
+    #movie {
+      width: 100%;
+      object-fit: cover;
+      height: 700px;
+    } 
 
 }
 
@@ -665,23 +739,24 @@ footer {
 
     .logo {
         height: 71px;
+
     }
 
     #main-nav {
-        height: 71px;
-        width: 78%;
+        height: 90px;
+         /*width: 82%; */
         /* font-size: 11px;  */
-        text-align: left; 
-    }
+        /* text-align: left; */
+    } 
 
     #main-nav ul li a {
         margin: 20px 4px;
         padding: 8px 15px 8px 20px;
     }
 
-    header {
-        margin: 40px 0px 0px 0px;
-    }  
+    /* header {
+        margin: 20px 0px 0px 0px;
+    }   */
 
     .barImageStyle {
         width: 90%;
@@ -693,10 +768,16 @@ footer {
 
      /* The Modal (background) */
   .modal {
-    padding-top: 50px;
+    padding-top: 40px;
     height: 60%;
   }
-  
+
+  #movie {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+  } 
+
 }
 
 /* ------------------- Mobile Phones ------------------------- */
@@ -711,8 +792,18 @@ footer {
     
     }
 
+    .logo {
+      height: 95px;
+      margin-left: 30px;
+    }
+
+    #home-title-content {
+      position: relative;  
+  }
+
     #main-nav {
-        width: 71px;
+        /* height: 90px; */
+        width: 0px;
     }
 
     #main-nav ul li a {
@@ -720,13 +811,26 @@ footer {
        
     }
 
+    #home-main { 
+      margin-top: 100px;
+    }
+
     header {
-        margin: 40px 0px 0px 0px;
+        margin: 100px 0px 0px 0px;
     } 
 
     .barImageStyle {
         width: 100%;
     }
+
+    #cinema-main {
+      min-height: 400px;
+    }
+    #movie {
+      width: 100%;
+      object-fit: cover;
+      height: 400px;
+    } 
 
     footer {
         background-color: rgb(248, 247, 246,);
@@ -788,14 +892,15 @@ footer {
 .topnav #myLinks {
   width: 100%; /*480px*/
   margin: auto;
+  padding-top: 90px;
   background-color:rgb(3, 3, 3);
-  height: 200px;
+  height: 310px;
   border: 6px solid white;
   border-style: double;
   border-radius: 10px;
-  top: 11%;
+  /* top: 12%; */
   display: none;
-  position: fixed;
+  position: absolute;
   text-align: left;
 }
 
@@ -810,6 +915,7 @@ footer {
 /* Style Hamburger icon */
 .topnav a.icon {
   background: black;
+  border: var(--main-border);
   display: block;
   position: absolute;
   margin: 1px;
@@ -835,13 +941,13 @@ footer {
 .dropdown-content2 {
   display: none;
   position: absolute;
-  height: 200px;
+  /* height: 200px; */
   /* background-color:rgb(255, 255, 255, 1.0); */
   min-width: 160px;
   /* border: 1px solid black; */
   /* border-radius: 8px; */
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  padding: 12px 16px;
+  padding: 112px 16px;
   z-index: 2;
 }
 
@@ -917,17 +1023,6 @@ main {
 /* .cinema-content3 {
     min-height: 183px;
 } */
-
-#movie {
-    /* background-size: contain; */
-    width: 100%;
-    object-fit: cover;
-    height: 500px;
-    /* width: 95%;
-    height: 700px;
-    margin: 35px; */
-    /* resize: both; */
-} 
 
 .hire-content3 {
     min-height: 100px;

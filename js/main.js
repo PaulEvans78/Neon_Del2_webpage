@@ -8,6 +8,11 @@ function myFunction() {
   }
 } 
 
+// Close the Modal
+// function closeDropDown() {
+//   document.getElementById("dropdown-content2").style.display = "none";
+// }
+
 // -------------------------CAROUSEL-------------------------------------
 
 // var slideIndex = 1;
