@@ -1,4 +1,4 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+// Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon 
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -7,6 +7,42 @@ function myFunction() {
     x.style.display = "block";
   }
 } 
+
+// Dropdown active menu
+
+document.getElementById("dropDownCinema").onclick = function(){
+	document.getElementById("dropDownCinema").style.color = 'red';
+  document.getElementById("dropDownRestaurant").style.color = 'white';
+  document.getElementById("dropDownBar").style.color = 'white';
+  document.getElementById("dropDownPrivate").style.color = 'white';
+ } 
+
+ document.getElementById("dropDownRestaurant").onclick = function(){
+	document.getElementById("dropDownRestaurant").style.color = 'red';
+  document.getElementById("dropDownCinema").style.color = 'white';
+  document.getElementById("dropDownBar").style.color = 'white';
+  document.getElementById("dropDownPrivate").style.color = 'white';
+ }
+
+ document.getElementById("dropDownBar").onclick = function(){
+	document.getElementById("dropDownBar").style.color = 'red';
+  document.getElementById("dropDownCinema").style.color = 'white';
+  document.getElementById("dropDownRestaurant").style.color = 'white';
+  document.getElementById("dropDownPrivate").style.color = 'white';
+ }
+
+ document.getElementById("dropDownPrivate").onclick = function(){
+	document.getElementById("dropDownPrivate").style.color = 'red';
+  document.getElementById("dropDownCinema").style.color = 'white';
+  document.getElementById("dropDownRestaurant").style.color = 'white';
+  document.getElementById("dropDownBar").style.color = 'white';
+ }
+
+
+
+
+
+ 
 
 // Close the Modal
 // function closeDropDown() {
