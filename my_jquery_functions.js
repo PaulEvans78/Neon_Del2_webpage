@@ -20,8 +20,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $(".topnav").click(function(){
-      // $("#myLinks").slideDown("slow");
+    $(".topnav a.icon").click(function(){
       $("#myLinks").slideToggle("slow");
   });
 });
