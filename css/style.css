@@ -252,6 +252,8 @@ header {
     margin-bottom: 20px;
 }
 
+
+
 /* --------------------Carousel + Slideshow-----------------------------------*/
 
 /* * {box-sizing:border-box} */
@@ -754,6 +756,12 @@ a[href^="mailto"]:hover { color: gray; }
         padding: 8px 15px 8px 20px;
     }
 
+    #home-main {
+      min-height: 500px;
+    }
+    .home-content1, .home-content2, .home-content3 {
+      max-height: 500px;
+    }
     /* header {
         margin: 20px 0px 0px 0px;
     }   */
@@ -815,6 +823,17 @@ a[href^="mailto"]:hover { color: gray; }
       margin-top: 100px;
     }
 
+    .home-content1, .home-content2 {
+      max-height: 300px;
+      min-width: 100%;
+      margin: 0px 0px 10px 0px;
+    }
+
+    .home-content3 {
+      max-height: 300px;
+      min-width: 100%;
+    }
+
     header {
         margin: 100px 0px 0px 0px;
     } 
@@ -846,17 +865,19 @@ a[href^="mailto"]:hover { color: gray; }
     .box1, .box3 {
         text-align: center;
         font-size: 16px;
+        margin: 0px;
         /* border: var(--main-border); */
     }
 
     .box2 {
         /* background-color: white; */
-        margin: 10px;
+        margin: 10px 0px 10px 0px;
         /* border: var(--main-border); */
     }
 
     .box4 {
         text-align: center;
+        margin: 10px 0px 0px 0px;
         /* border: var(--main-border); */
     }
 
@@ -892,9 +913,9 @@ a[href^="mailto"]:hover { color: gray; }
 .topnav #myLinks {
   width: 100%; /*480px*/
   margin: auto;
-  padding-top: 90px;
+  padding-top: 110px;
   background-color:rgb(3, 3, 3);
-  height: 310px;
+  height: 360px;
   border: 6px solid white;
   border-style: double;
   border-radius: 10px;
@@ -952,7 +973,7 @@ a[href^="mailto"]:hover { color: gray; }
   /* border: 1px solid black; */
   /* border-radius: 8px; */
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  padding: 112px 16px;
+  padding: 134px 16px;
   z-index: 2;
 }
 
