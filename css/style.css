@@ -1,9 +1,3 @@
-/* Du har inga klasser som heter .main och .aside. Dessa är taggar och man kommer åt dessa utan punkt, i CSS. 
-Men du verkar ändå ha löst uppgiften utan dessa selektorer. Bättre då att radera CSS kod som inte används Content 1-6 har alla samma kod. 
-Bättre att använda en gemensam selektor för alla content-sektionerna, istället för att repetera koden 6 gånger.
-Samma sak med dina buttons, många har samma kod och därmed bättre att använda en gemensam selektorr för att hålla koden efter DRY-principen (Don't Repeat Yourself) */
-
-/* Change text to Arial from Myriad Pro */
 :root {
     --main-border: 1px solid rgba(248, 246, 246);
     --main-font-size: 14px;
@@ -14,32 +8,18 @@ Samma sak med dina buttons, många har samma kod och därmed bättre att använd
 }
 
 .background_cinema {
-	/* background: url(../img/cinema_background.png) center top repeat-y;
-	background-size: cover; */
-  /* background-color: orange; */
-  /* background-image: linear-gradient(to bottom, white, gray); */
   background-image: linear-gradient(white, rgb(105, 91, 83), white);
-  /* min-width: 360px; */
 }
 
 .background_restaurant {
-	/* background: url(../img/restaurant_background.jpg) center top repeat-y;
-	background-size: 100%; */
-  /* background-color: rgb(255, 165, 0, 0.5); */
-  /* background-image: linear-gradient(to bottom, white, orange); */
   background-image: linear-gradient(white, rgb(219, 141, 38), white);
-  
 }
 
 .background_bar {
-	/* background: url(../img/bar_background.jpg) center top repeat-y;
-	background-size: 100%; */
   background-image: linear-gradient(white, rgb(218, 72, 36), white);
 }
 
 .background_hire {
-	/* background: url(../img/hire_background.jpg) center top repeat-y;
-	background-size: 100%; */
   background-image: linear-gradient(white, rgba(20, 156, 219, 0.938), white);
 }
 
@@ -67,24 +47,18 @@ body {
 
 .logo:hover {
   height: 92px;
-  /* color:rgb(87, 85, 85); */
+  
 }
-
-
 
 #main-nav {
     float: left;
     height: 100px;
     width: 100%;
     background-color: white;
-    /* padding-right: 30px; */
     font-family: 'Arial','Courier New', Courier, monospace ;
-    /* font-style: normal; */
     font-size: var(--main-font-size); 
     text-align: left; 
 }
-
-
 
 #main-nav ul {
     list-style-type: none;
@@ -103,21 +77,13 @@ body {
 }
 
 #main-nav ul li a:hover {
-    /* background-color:rgb(73, 72, 72); */
     padding: 11px 36px 11px 36px;
-    /* color: gray; */
 }
-
 
  #main-nav > ul > li {
      float: right;
  }
  
- .dropdown {
-     
- }
-
-
  .dropdown-content {
      display: none;
      position: absolute;
@@ -134,32 +100,14 @@ body {
      display: block;
  }
 
- /* .active {
-        background-color: red;
- } */
-
  a {
      color: rgb(0, 0, 0);
      font-weight: normal;
  }
 
- /* a :hover {
-   color: gray;
- } */
-
  #currentLink {
-   /* background-color: red; */
    color: rgb(255, 0, 13);
  }
-
- /* li a:hover {
-    color: red;
- } */
-
- /* .cinemaActive {
-    color: rgb(202, 18, 18);
- } */
-
 
  .topnav {
     overflow: hidden;
@@ -170,7 +118,7 @@ body {
  
 /* --------------------------------- Grid Container ---------------------------------------- */
 .cinema-container, .Restaurant-container, .home-container {
-  width: 100%; /* 90% ?*/
+  width: 100%; 
   min-width: 276px;
 	margin: 0px auto;
   display: grid;
@@ -188,22 +136,14 @@ body {
 	gap: 10px; 
 
   }
-
-/* .home-container {
-  border: 10px black solid;
-  top: 0px;
-  z-index: 1;
-  } */
   
   /* -------------------------------- Grid Cells ------------------------------------------ */
 
 
 header {
     border: var(--main-border); 
-    margin: 30px 0px 0px 0px;  /* !!!!!!!*/
-	/* min-height: 90px; */
+    margin: 30px 0px 0px 0px; 
     grid-area: header;
-
 }
 
 .content1, .content2 {
@@ -228,14 +168,14 @@ header {
 
 #Restaurant-main { 
     border: var(--main-border);
-	min-height: 600px;
+	  min-height: 600px;
     grid-area: content; 
 }
 
 #home-main { 
-  border: var(--main-border);
-  min-height: 600px;
-  grid-area: content; 
+    border: var(--main-border);
+    min-height: 600px;
+    grid-area: content; 
 }
 
 #cinema-main {
@@ -247,20 +187,13 @@ header {
 
 #bar-main, #hire-main {
     border: var(--main-border);
-    /* min-height: 663px; */
     min-width: 100%;
     margin-bottom: 20px;
 }
 
-
-
 /* --------------------Carousel + Slideshow-----------------------------------*/
 
-/* * {box-sizing:border-box} */
-
-/* Slideshow container */
 .slideshow-container {
-  /* max-width: 1000px; */
   position: relative;
   margin-top: 12px;
 }
@@ -299,48 +232,10 @@ header {
     left: 0;
     border-radius: 3px 0 0 3px;
   }
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover, .cinema_prev:hover, .cinema_next:hover {
-  /* right: 0; */
-  /* left: 0; */
   background-color: rgba(80, 78, 78, 0.8);
 }
-
-/* Caption text */
-/* .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-} */
-
-/* Number text (1/3 etc) */
-/* .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
-
-/* The dots/bullets/indicators */
-/* .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
-
-/* .active, .dot:hover {
-  background-color: #717171;
-} */
 
 /* Fading animation */
 .fade {
@@ -361,23 +256,13 @@ header {
 }
 
 #movie {
-  /* background-size: contain; */
   width: 100%;
   object-fit: cover;
   height: 800px;
-  /* width: 95%;
-  height: 700px;
-  margin: 35px; */
-  /* resize: both; */
 } 
-
 
 /*---------------------------SlideShow BAR/HIRE---------------------------------*/
 
-/* .container {
-    position: relative;
-  } */
-  
   .bar-content3, .hire-content3, .cinema-content3 {
     box-sizing: border-box;
     position: relative;
@@ -385,16 +270,9 @@ header {
     border: var(--main-border);
     margin: 10px;
     padding: 10px;
-    /* min-height: 400px; */
     width: 100%;
-    /* flex-grow: 1; */
     text-align: center;
-    /* font-size: 10px; */
   }
-
-  /* .cinema-content3 {
-    z-index: -1;
-  } */
 
   .barImageStyle {
       width: 100%;
@@ -405,73 +283,23 @@ header {
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
-  /* .prev, */
-  /* .next { */
-    /* cursor: pointer; */
-    /* position: absolute; */
-    /* top: 40%; */
-    /* width: auto; */
-    /* padding: 16px; */
-    /* margin-top: -22px; */
-    /* color: white; */
-    /* font-weight: bold; */
-    /* font-size: 20px; */
-    /* border-radius: 0 3px 3px 0; */
-    /* user-select: none; */
-    /* -webkit-user-select: none; */
-  /* } */
-  
-  /* Position the "next button" to the right */
-  /* .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  } */
-  
-  /* On hover, add a black background color with a little bit see-through */
-  /* .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  } */
-  
-  /* Number text (1/3 etc) */
-  /* .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  } */
-  
-  /* Container for image text */
-  /* .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  } */
-  
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Six columns side by side */
   .column {
     float:left;
     width: 16.6%;
-    /* justify-content: center; */
   }
 
-  /* Six columns side by side */
   .cinema-column {
     float:left;
     width: 33.3%;
-    /* justify-content: center; */
   }
   
-  /* Add a transparency effect for thumnbail images */
+  /* Add a transparency for thumnbail images */
   .thumbnails {
     opacity: 0.6;
   }
@@ -483,7 +311,6 @@ header {
 
   #cinema-img:hover, #restuarant-img:hover, #bar-img:hover {
     opacity: 0.8;
-    /* background-color: #020202; */
   }
 
   /*----------------------------lightbox Gallery HIRE-----------------------------*/
@@ -498,7 +325,7 @@ header {
     clear: both;
   }
   
-  /* Create four equal columns that floats next to eachother */
+  /* Create four equal columns that floats next to each other */
   .hireColumn {
     float: left;
     width: 25%;
@@ -548,74 +375,12 @@ header {
     cursor: pointer;
   }
   
-  /* Hide the slides by default */
-  /* .mySlides {
-    display: none;
-  } */
-  
-  /* Next & previous buttons */
-  /* .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  } */
-  
-  /* Position the "next button" to the right */
-  /* .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  } */
-  
-  /* On hover, add a black background color with a little bit see-through */
-  /* .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  } */
-  
-  /* Number text (1/3 etc) */
-  /* .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  } */
-  
-  /* Caption text */
-  /* .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-  } */
-  
-  /* img.demo {
-    opacity: 0.6;
-  } */
-  
-  /* .active,
-  .demo:hover {
-    opacity: 1;
-  } */
-  
   img.hover-shadow {
     transition: 0.3s;
   }
   
   .hover-shadow:hover {
     opacity: 0.5;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   }
 /*---------------------------FOOTER----------------------------------*/
 footer {
@@ -627,7 +392,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     position:relative;
-    /* z-index: -1; */
 }
 
 .box1, .box2, .box3, .box4  {
@@ -637,18 +401,11 @@ footer {
     padding: 10px;
     text-align: left;
     font-size: 16px;
-
 }
 
 .box2 {
-    /* border: 1px solid black; */
     padding: 0px;
 }
-
-/* .mapouter {
-  position:absolute;
-  z-index: -1;
-} */
 
 .box3 {
     text-align: center;
@@ -663,15 +420,6 @@ a[href^="mailto"]:hover { color: gray; }
 .instagram-icon:hover, .facebook-icon:hover, .twitter-icon:hover {
   height: 40px;
 }
-
-/* .mailto a:hover {
-  background-color: orange;
-}  */
-
-/* .custom-social {
-    color: rgb(224, 50, 19);
-    font-weight: bold;
-   } */
 
 /* -------------------- Media Quires ------------------------------ */
 
@@ -690,22 +438,11 @@ a[href^="mailto"]:hover { color: gray; }
         height: 84px;
     }
 
-    /* #main-nav {
-        height: 100px;
-        width: 100%;
-        font-size: 12px;  
-        text-align: left; 
-    } */
-
     #main-nav ul li a {
         margin: 20px 8px;
         padding: 8px 20px 8px 20px; 
     }
     
-    /* header { 
-        margin: 20px 0px 0px 0px; 
-    } */
-
     .barImageStyle {
         width: 80%;
     }
@@ -714,8 +451,6 @@ a[href^="mailto"]:hover { color: gray; }
       padding-top: 40px;
       height: 70%;
     }
-
-    
 
     #movie {
       width: 100%;
@@ -746,9 +481,6 @@ a[href^="mailto"]:hover { color: gray; }
 
     #main-nav {
         height: 90px;
-         /*width: 82%; */
-        /* font-size: 11px;  */
-        /* text-align: left; */
     } 
 
     #main-nav ul li a {
@@ -762,29 +494,29 @@ a[href^="mailto"]:hover { color: gray; }
     .home-content1, .home-content2, .home-content3 {
       max-height: 500px;
     }
-    /* header {
-        margin: 20px 0px 0px 0px;
-    }   */
-
+    
     .barImageStyle {
         width: 90%;
     }
 
-    /* .hire-content3 {
-      min-height: 300px;
-  } */
+    .modal {
+      padding-top: 40px;
+      height: 60%;
+    }
 
-     /* The Modal (background) */
-  .modal {
-    padding-top: 40px;
-    height: 60%;
+    #movie {
+      width: 100%;
+      object-fit: cover;
+      height: 500px;
+    } 
+  
+    footer {
+      grid-template-columns: repeat(2, 1fr);
   }
 
-  #movie {
-    width: 100%;
-    object-fit: cover;
-    height: 500px;
-  } 
+   .box1, .box4 {
+      text-align: center;
+ } 
 
 }
 
@@ -810,13 +542,11 @@ a[href^="mailto"]:hover { color: gray; }
   }
 
     #main-nav {
-        /* height: 90px; */
         width: 0px;
     }
 
     #main-nav ul li a {
         display: none;
-       
     }
 
     #home-main { 
@@ -845,6 +575,7 @@ a[href^="mailto"]:hover { color: gray; }
     #cinema-main {
       min-height: 400px;
     }
+
     #movie {
       width: 100%;
       object-fit: cover;
@@ -861,27 +592,21 @@ a[href^="mailto"]:hover { color: gray; }
         grid-template-rows:repeat(4, 1fr);
     }
 
-
     .box1, .box3 {
         text-align: center;
         font-size: 16px;
         margin: 0px;
-        /* border: var(--main-border); */
     }
 
     .box2 {
-        /* background-color: white; */
         margin: 10px 0px 10px 0px;
-        /* border: var(--main-border); */
     }
 
     .box4 {
         text-align: center;
         margin: 10px 0px 0px 0px;
-        /* border: var(--main-border); */
     }
 
-    /* The Modal (background) */
     .modal {
       padding-top: 50px;
       left: 0%;
@@ -891,102 +616,72 @@ a[href^="mailto"]:hover { color: gray; }
 
 /*----------------------------HAMBURGER MENU--------------------------------*/
 
-/* .mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color:rgb(156, 151, 151, 0.5);
-  height: 200px;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  display: contents; 
-} */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(17, 17, 17);
+    position: relative;
+    display: contents;
+    text-align: center;
+  }
 
-.topnav {
-  overflow: hidden;
-  background-color: rgb(17, 17, 17);
-  position: relative;
-  display: contents;
-  text-align: center;
-}
+  .topnav #myLinks {
+    width: 100%; 
+    margin: auto;
+    padding-top: 110px;
+    background-color:rgb(3, 3, 3);
+    height: 360px;
+    border: 6px solid white;
+    border-style: double;
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    text-align: left;
+    z-index: 2;
+  }
 
-.topnav #myLinks {
-  width: 100%; /*480px*/
-  margin: auto;
-  padding-top: 110px;
-  background-color:rgb(3, 3, 3);
-  height: 360px;
-  border: 6px solid white;
-  border-style: double;
-  border-radius: 10px;
-  /* top: 12%; */
-  display: none;
-  position: absolute;
-  text-align: left;
-}
+  .topnav a {
+    color: rgb(218, 214, 214);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+  }
 
-.topnav a {
-  color: rgb(218, 214, 214);
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-}
+  /* Style Hamburger icon */
+  .topnav a.icon {
+    background: black;
+    border: var(--main-border);
+    display: block;
+    position: fixed;
+    margin: 1px;
+    border-radius: 8px;
+    right: 0;
+    top: 0;
+    z-index: 3;
+  }
 
-/* Style Hamburger icon */
-.topnav a.icon {
-  background: black;
-  border: var(--main-border);
-  display: block;
-  position: absolute;
-  margin: 1px;
-  border-radius: 8px;
-  right: 0;
-  top: 0;
-}
+  .dropdown:hover .dropdown-content2 {
+    display: block;
+  } 
+    
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 134px 0px;
+    z-index: 2;
+  }
 
-/* .topnav a:hover {
-  background-color: rgb(128, 125, 125);
-  color: black;
-} */
+  .topnav li {
+    list-style-type: none;
+  }
 
-/* .active {
-  background-color: #04AA6D;
-  color: white;
-} */
-
-/* .cinemaDropDown :active { /*!!!! NEEDED?*/
-  /* color: red; */
-  /* background-color: blue; 
-} */
-
-.dropdown:hover .dropdown-content2 {
-  display: block;
-} 
-  
-.dropdown-content2 {
-  display: none;
-  position: absolute;
-  /* height: 200px; */
-  /* background-color:rgb(255, 255, 255, 1.0); */
-  min-width: 160px;
-  /* border: 1px solid black; */
-  /* border-radius: 8px; */
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  padding: 134px 16px;
-  z-index: 2;
-}
-
-.topnav li {
-  list-style-type: none;
-}
-
-.topnav ul {
-  list-style-type: none;
-  text-align: left;
-  left: 60%;
-  top: -2%;
-}
+  .topnav ul {
+    list-style-type: none;
+    text-align: left;
+    left: 60%;
+    top: -2%;
+  }
 
 }
 /* ------------------------- FlexBox Main ------------------------------ */
@@ -1010,18 +705,15 @@ main {
     border: 6px solid black;
     border-style: double;
     margin: 10px;
-    height: 800px;
+    height: 980px;
     width: 250px;
     flex-grow: 1;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .home-content1, .home-content2, .home-content3 {
-    /* background-color: white; */
     border: 1px solid black;
-    /* border-style: double; */
-    /* margin: 10px; */
     height: 800px;
     width: 250px;
     flex-grow: 1;
@@ -1035,21 +727,6 @@ main {
   height: 100%;
   opacity: 0.1;
 }
-
-/*.hire-content3,*/ /*.cinema-content3 {
-    background-color: rgb(3, 3, 3);
-    border: var(--main-border);
-    margin: 10px;
-    min-height: 400px;
-    width: 100%;
-    flex-grow: 1;
-    text-align: center;
-    font-size: 10px;
-  }*/
-
-/* .cinema-content3 {
-    min-height: 183px;
-} */
 
 .hire-content3 {
     min-height: 100px;
@@ -1069,7 +746,7 @@ main {
 .customLink {
     color: rgb(0, 0, 0);
     font-size: var(--main-font-size); 
-   } /* check if in use */
+   } 
 
 .customNavLink {
     color: white;
@@ -1080,10 +757,6 @@ main {
     color: white;
     font-size: 15px; 
    }
-
-/* .cinema-img a:hover {
-  color: rgb(5, 5, 5);
-} */
 
 /* ------------------------- FlexBox Header ------------------------------ */
 
