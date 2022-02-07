@@ -128,42 +128,18 @@
     <!-- -------------------MAIN-------------------------------------------------- -->
         
     <main id="cinema-main" class="flex-items" dir="ltr"> 
-        <section class="cinema-content3">
+          <section class="cinema-content3"> 
         
-                <!-- Full-width images -->
-                <div class="mySlides fade">
-                  <iframe id="movie" src="https://www.youtube.com/embed/BIhNsAtPbPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              
-                <div class="mySlides fade">
-                  <iframe id="movie" src="https://www.youtube.com/embed/1SQsvi39A_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                </div>
-              
-                <div class="mySlides fade">
-                  <iframe id="movie" src="https://www.youtube.com/embed/OkTyVNhjuwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              
-                <!-- Next and previous buttons -->
-                <a class="cinema_prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="cinema_next" onclick="plusSlides(1)">&#10095;</a>
-              
-              
-                <!-- Thumbnail images -->
-                <div class="row">
-                  <div class="cinema-column">
-                    <img class="thumbnails" src="../../img/noTimeToDie.jpg" style="width:100%" onclick="currentSlide(1)" alt="No Time To Die">
-                  </div>
-                  <div class="cinema-column"> 
-                    <img class="thumbnails" src="../../img/houseofgucci.jpg" style="width:100%" onclick="currentSlide(2)" alt="House Of Gucci">
-                  </div>
-                  <div class="cinema-column">
-                    <img class="thumbnails" src="../../img/atlantics.jpg" style="width:100%" onclick="currentSlide(3)" alt="Atlantics">
-                  </div>
-                  
-                  
-                </div>
+    <video  class="cinema-content3" id="vidSlider" autoplay muted loop controls>
+         <source src="../../videos/video1.mp4" type="video/mp4">
+    </video>
+            <ul class="vidNavigation">
+                <li onclick="videoUrl('../../videos/video1.mp4')"><img src="../../img/noTimeToDie.jpg"></li>
+                <li onclick="videoUrl('../../videos/video2.mp4')"><img src="../../img/houseofgucci.jpg"></li>
+                <li onclick="videoUrl('../../videos/video3.mp4')"><img src="../../img/atlantics.jpg"></li>
+            </ul>
 
-        </section>
+          </section>
          
        </main>
 

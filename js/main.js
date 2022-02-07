@@ -1,27 +1,27 @@
 // Dropdown active menu
 
-document.getElementById("dropDownCinema").onclick = function(){
+  document.getElementById("dropDownCinema").onclick = function(){
 	document.getElementById("dropDownCinema").style.color = 'red';
   document.getElementById("dropDownRestaurant").style.color = 'white';
   document.getElementById("dropDownBar").style.color = 'white';
   document.getElementById("dropDownPrivate").style.color = 'white';
  } 
 
- document.getElementById("dropDownRestaurant").onclick = function(){
+  document.getElementById("dropDownRestaurant").onclick = function(){
 	document.getElementById("dropDownRestaurant").style.color = 'red';
   document.getElementById("dropDownCinema").style.color = 'white';
   document.getElementById("dropDownBar").style.color = 'white';
   document.getElementById("dropDownPrivate").style.color = 'white';
  }
 
- document.getElementById("dropDownBar").onclick = function(){
+  document.getElementById("dropDownBar").onclick = function(){
 	document.getElementById("dropDownBar").style.color = 'red';
   document.getElementById("dropDownCinema").style.color = 'white';
   document.getElementById("dropDownRestaurant").style.color = 'white';
   document.getElementById("dropDownPrivate").style.color = 'white';
  }
 
- document.getElementById("dropDownPrivate").onclick = function(){
+  document.getElementById("dropDownPrivate").onclick = function(){
 	document.getElementById("dropDownPrivate").style.color = 'red';
   document.getElementById("dropDownCinema").style.color = 'white';
   document.getElementById("dropDownRestaurant").style.color = 'white';
@@ -38,6 +38,7 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
 
 // Thumbnail image controls
 function currentSlide(n) {
@@ -63,3 +64,9 @@ function showSlides(n) {
 }
 
 
+// --------------------------- Video Player -------------------------
+
+  function videoUrl(hmmmmmm){
+  document.getElementById("vidSlider").src = hmmmmmm;
+  }
+  

@@ -117,6 +117,7 @@ body {
   }
  
 /* --------------------------------- Grid Container ---------------------------------------- */
+
 .cinema-container, .Restaurant-container, .home-container {
   width: 100%; 
   min-width: 276px;
@@ -180,7 +181,7 @@ header {
 
 #cinema-main {
     border: var(--main-border);
-    min-height: 663px;
+    min-height: 500;
     min-width: 276px;
     margin-bottom: 20px;
 } 
@@ -191,7 +192,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* --------------------Carousel + Slideshow-----------------------------------*/
+/* --------------------Carousel/Slideshow-----------------------------------*/
 
 .slideshow-container {
   position: relative;
@@ -203,7 +204,7 @@ header {
 }
 
 /* Next & previous buttons */
-.prev, .next, .cinema_prev, .cinema_next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -218,22 +219,18 @@ header {
   user-select: none;
 }
 
-.cinema_prev, .cinema_next {
-  top: 42%;
-}
-
 /* Position the "next button" to the right */
-.next, .cinema_next {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev, .cinema_prev {
+.prev {
     left: 0;
     border-radius: 3px 0 0 3px;
   }
 
-.prev:hover, .next:hover, .cinema_prev:hover, .cinema_next:hover {
+.prev:hover, .next:hover {
   background-color: rgba(80, 78, 78, 0.8);
 }
 
@@ -255,11 +252,52 @@ header {
   to {opacity: 1}
 }
 
-#movie {
-  width: 100%;
+/* ----------------------------------- Video Player --------------------------------------------- */
+
+#vidSlider {
+width: 98%;
+}
+
+video {
+  position: absolute;
+  height: 100%;
   object-fit: cover;
-  height: 800px;
-} 
+  }
+  
+.vidNavigation {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+.vidNavigation li {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 3px 3px 0;
+  opacity: 0.7;
+  transition: 0.5s;
+  }
+  
+.vidNavigation li:hover {
+  opacity: 1;
+  }
+  
+.vidNavigation li img {
+  width: 120px;
+  transition: 0.5s;
+  }
+  
+.vidNavigation li img:hover {
+  width: 200px;
+  }
 
 /*---------------------------SlideShow BAR/HIRE---------------------------------*/
 
@@ -292,11 +330,6 @@ header {
   .column {
     float:left;
     width: 16.6%;
-  }
-
-  .cinema-column {
-    float:left;
-    width: 33.3%;
   }
   
   /* Add a transparency for thumnbail images */
@@ -452,14 +485,7 @@ a[href^="mailto"]:hover { color: gray; }
       height: 70%;
     }
 
-    #movie {
-      width: 100%;
-      object-fit: cover;
-      height: 700px;
-    } 
-
 }
-
 
 /* ------------------ Tabletts -----------------------------*/
 
@@ -476,7 +502,6 @@ a[href^="mailto"]:hover { color: gray; }
 
     .logo {
         height: 71px;
-
     }
 
     #main-nav {
@@ -491,6 +516,7 @@ a[href^="mailto"]:hover { color: gray; }
     #home-main {
       min-height: 500px;
     }
+
     .home-content1, .home-content2, .home-content3 {
       max-height: 500px;
     }
@@ -504,19 +530,21 @@ a[href^="mailto"]:hover { color: gray; }
       height: 60%;
     }
 
-    #movie {
-      width: 100%;
-      object-fit: cover;
-      height: 500px;
-    } 
+    .vidNavigation {
+      bottom: 50px;
+    }
+
+    .vidNavigation li {
+      padding: 4px 4px 0px;
+      }
   
     footer {
       grid-template-columns: repeat(2, 1fr);
-  }
+    }
 
    .box1, .box4 {
       text-align: center;
- } 
+   } 
 
 }
 
@@ -573,14 +601,29 @@ a[href^="mailto"]:hover { color: gray; }
     }
 
     #cinema-main {
-      min-height: 400px;
+      min-height: 200px;
     }
 
-    #movie {
-      width: 100%;
-      object-fit: cover;
-      height: 400px;
-    } 
+    #vidSlider {
+      width: 95%;
+    }
+        
+    .vidNavigation {
+      bottom: -10px;
+      left: 46%;
+    }
+        
+    .vidNavigation li {
+      margin: 0 5px;
+    }
+
+    .vidNavigation li img {
+      width: 80px;
+    }
+        
+    .vidNavigation li img:hover {
+      width: 120px;
+    }
 
     footer {
         background-color: rgb(248, 247, 246,);
