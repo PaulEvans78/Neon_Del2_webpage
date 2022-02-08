@@ -66,7 +66,7 @@ function showSlides(n) {
 
 // --------------------------- Video Player -------------------------
 
-  function videoUrl(hmmmmmm){
-  document.getElementById("vidSlider").src = hmmmmmm;
+  function videoUrl(x){
+  document.getElementById("vidSlider").src = x;
   }
   
