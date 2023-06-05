@@ -27,18 +27,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/PaulEvans78/cv-2-Dynamisk/tree/master">
-    <img src="img/neon_logo copy.png" alt="Logo" width="100" height="140">
+  <a href="https://github.com/PaulEvans78/Neon_webpage_slutprojekt/tree/master">
+    <img src="img/neon_logo copy.png" alt="Logo" width="200" height="100">
   </a>
 
 <h3 align="center">Neon Cinema</h3>
 
   <p align="center">
-    Neon is a website built for a fictional company. Using HTML, CSS and JavaScript.  
+    Neon is a website built for a fictional company. Using HTML, CSS and JavaScript. Created by: Paul Evans.  
     <br />
     🌴 💻 🎥 📸 🤙
     <br />
-    <a href="https://github.com/PaulEvans78/cv-2-Dynamisk/tree/master"><strong>Inspect the files »</strong></a>
+    <a href="https://github.com/PaulEvans78/Neon_webpage_slutprojekt/tree/master"><strong>Inspect the files »</strong></a>
     <br />
     <br />
 </div>
@@ -113,7 +113,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/PaulEvans78/cv-2-Dynamisk.git
+   git clone https://github.com/PaulEvans78/Neon_webpage_slutprojekt.git
    ```
 3. Install NPM packages
    ```sh
@@ -144,7 +144,7 @@ Email: paul.evans.creative@gmail.com
 
 LinkedIn: [https://www.linkedin.com/in/paul-evans-3a74605/](https://linkedin.com/in/paul-evans-3a74605/)
 
-Project Link: [https://github.com/PaulEvans78/cv-2-Dynamisk](https://github.com/PaulEvans78/cv-2-Dynamisk)
+Project Link: [https://github.com/PaulEvans78/Neon_webpage_slutprojekt](https://github.com/PaulEvans78/Neon_webpage_slutprojekt)
 
 <!-- SOCIAL -->
 ## Social
@@ -167,8 +167,6 @@ Paul Evans fsf: [Showreel](https://paulevans-dop.com/)
 
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
-* [React icons](https://react-icons.github.io/react-icons/)
-* [surge](https://surge.sh)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,15 +175,15 @@ Paul Evans fsf: [Showreel](https://paulevans-dop.com/)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
-[contributors-url]: https://github.com/PaulEvans78/cv-2-Dynamisk/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/PaulEvans78/cv-2-Dynamisk.svg?style=for-the-badge
-[forks-url]: https://github.com/PaulEvans78/cv-2-Dynamisk/network/members
-[stars-shield]: https://img.shields.io/github/stars/PaulEvans78/cv-2-Dynamisk.svg?style=for-the-badge
-[stars-url]: https://github.com/PaulEvans78/cv-2-Dynamisk/stargazers
-[issues-shield]: https://img.shields.io/github/issues/PaulEvans78/cv-2-Dynamisk.svg?style=for-the-badge
-[issues-url]: https://github.com/PaulEvans78/cv-2-Dynamisk/issues
+[contributors-url]: https://github.com/PaulEvans78/Neon_webpage_slutprojekt/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/PaulEvans78/Neon_webpage_slutprojekt.svg?style=for-the-badge
+[forks-url]: https://github.com/PaulEvans78/Neon_webpage_slutprojekt/network/members
+[stars-shield]: https://img.shields.io/github/stars/PaulEvans78/Neon_webpage_slutprojekt.svg?style=for-the-badge
+[stars-url]: https://github.com/PaulEvans78/Neon_webpage_slutprojekt/stargazers
+[issues-shield]: https://img.shields.io/github/issues/PaulEvans78/Neon_webpage_slutprojekt.svg?style=for-the-badge
+[issues-url]: https://github.com/PaulEvans78/Neon_webpage_slutprojekt/issues
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
-[license-url]: https://github.com/PaulEvans78/cv-2-Dynamisk/blob/master/LICENSE.md
+[license-url]: https://github.com/PaulEvans78/Neon_webpage_slutprojekt/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/paul-evans-3a74605/
 [product-screenshot]: src/assets/landingpage.png
@@ -207,11 +205,3 @@ Paul Evans fsf: [Showreel](https://paulevans-dop.com/)
 [JQuery-url]: https://jquery.com 
 
 
-
-
-
-
-# Neon_webpage_slutprojekt
-Neon is a website built for a fictional company. Using HTML, CSS and JavaScript.
-Created by: Paul Evans
-https://paulevans78.github.io/Neon_webpage_slutprojekt/
