@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/PaulEvans78/Neon_webpage_slutprojekt/tree/master">
-    <img src="img/neon_logo copy.png" alt="Logo" width="200" height="80">
+    <img src="img/neon_logo copy.png" alt="Logo" width="200" height="70">
   </a>
 
 <h3 align="center">Neon Cinema</h3>
@@ -67,11 +67,11 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## My Portfolio
+## Neon Cinema
 
 [![https://paulevans78.github.io/Neon_webpage_slutprojekt/][product-screenshot]](https://paulevans78.github.io/Neon_webpage_slutprojekt/)
 
-UX / UI Designer & Frontend Developer. Check it out and if you like what you see contact me at paul.evans.creative@gmail.com
+Neon is a website built for a fictional company. Using HTML, CSS and JavaScript. Created by me: Paul Evans.  I am a UX / UI Designer & Frontend Developer. If you like what you see contact me at paul.evans.creative@gmail.com
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `PaulEvans78`, `portfolio`, `paulevanscreative/`, `paul-evans-3a74605/`, `gmail`, `paul.evans.creative`, `Portfolio`, `A website built in React to Showcase my work as a UX/UI designer, frontend Developer and Cinematographer.` -->
 
@@ -81,7 +81,9 @@ UX / UI Designer & Frontend Developer. Check it out and if you like what you see
 
 ### Built With
 
-* [![React][React.js]][React-url]
+HTML
+CSS
+JavaScript
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
