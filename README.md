@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/PaulEvans78/Neon_webpage_slutprojekt/tree/master">
-    <img src="img/neon_logo copy.png" alt="Logo" width="200" height="100">
+    <img src="img/neon_logo copy.png" alt="Logo" width="200" height="80">
   </a>
 
 <h3 align="center">Neon Cinema</h3>
